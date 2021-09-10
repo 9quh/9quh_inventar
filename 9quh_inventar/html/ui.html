@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Inventory</title>
+    <link rel="stylesheet" type="text/css" href="ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="ui.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+<div class="card">
+    <div class="inventory-container">
+        <div class="inventory-head">
+        <img src="https://www.silencelife.gg/img/ingame/sle_logo.png" class="logo">
+        <img src="https://www.silencelife.gg/img/ingame/close.png" class="sub-container-actions-elem4 pointed-cursor" id="close"></img>
+        <div class="inv-head-btn">
+            <p>1500000$</p>
+        </div>
+        </div>
+        <div class="inv-cont" id="invcontainer">
+            <div class="inv-cont-elem" id="element-money" onclick="select2(this);" style="background-image: url(https://image.flaticon.com/icons/svg/925/925674.svg);" data-itype="cash" data-count="` + event.data.money + `">
+
+            </div>
+        </div>
+        <div class="inventory-footer">
+            <div class="inventory-amount">
+
+            </div>
+            <div class="inventory-actions">
+                <div class="actions-block">
+                    <div class="amount-bar">
+                        <input id="amount" type="number" min="1" onkeypress="return event.charCode >= 48 && event.charCode <= 57" class="sub-cont-number nobr">
+                    </div>
+                    <div class="sub-container-actions-elem3 pointed-cursor" id="use">
+                        Verwenden
+                    </div>
+                    <div class="sub-container-actions-elem1 pointed-cursor" id="throw">
+                        Entsorgen
+                    </div>
+                    <div class="sub-container-actions-elem2 pointed-cursor" id="give">
+                        Weitergeben
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
