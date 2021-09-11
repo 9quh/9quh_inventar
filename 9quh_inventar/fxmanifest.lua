@@ -29,8 +29,8 @@ files {
 
 dependencies {
 	'es_extended',
-	'esx_cleaning',
-	'esx_vehicleshop'
+--	'esx_cleaning', -- my billing, you dont need it.
+--	'esx_vehicleshop' -- i dont even know why it here lmao.
 }
 
 exports {
@@ -45,4 +45,4 @@ exports {
 
 
 
-
+
